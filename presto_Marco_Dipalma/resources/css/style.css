@@ -1,0 +1,12 @@
+h1, h2, h3, h4, h5, p, label{
+    color: white;
+}
+
+body{
+    background-color: rgb(56, 56, 56);
+    background-image: url(../backgroundimg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
