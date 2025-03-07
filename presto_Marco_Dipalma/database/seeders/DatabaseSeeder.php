@@ -11,16 +11,16 @@ class DatabaseSeeder extends Seeder
 {
 
     public $categories=[
-        'elettronica',
-        'abbigliamento',
-        'salute e bellezza',
-        'casa e giardinaggio',
-        'giochi',
-        'sport',
-        'animali domestici',
-        'libri e riviste',
-        'accessori',
-        'motori',
+        'Elettronica',
+        'Abbigliamento',
+        'Salute e bellezza',
+        'Casa e giardinaggio',
+        'Giochi',
+        'Sport',
+        'Animali domestici',
+        'Libri e riviste',
+        'Accessori',
+        'Motori',
     ];
 
     /**

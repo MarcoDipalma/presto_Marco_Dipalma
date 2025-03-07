@@ -4,9 +4,16 @@ h1, h2, h3, h4, h5, p, label{
 
 body{
     background-color: rgb(56, 56, 56);
-    background-image: url(../backgroundimg.png);
-    background-repeat: no-repeat;
+    background-image: url(../backgorundimg_repeat.jpg);
+    background-repeat: repeat;
     background-size: 100%;
-    background-position: center;
+    /* background-position: center; */
 }
 
+.vh-75{
+    height: 75vh
+}
+
+.card-w{
+    width: 18rem;
+}
