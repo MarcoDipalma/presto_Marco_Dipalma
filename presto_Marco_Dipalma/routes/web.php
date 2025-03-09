@@ -7,6 +7,9 @@ use App\Http\Controllers\RevisorController;
 
 Route::get('/', [PublicController::class, 'home'])->name('home');
 
+Route::get('/search/article',[PublicController::class, 'searchArticles'])->name('article.search');
+
+
 #Article
 
 Route::get('/article/create', [ArticleController::class, 'create'])->name('article.create');
