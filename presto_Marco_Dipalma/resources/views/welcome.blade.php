@@ -17,7 +17,7 @@
             <div class="col-12">
                 <h1 class="display-1 text-white">Presto.it</h1>
                 @auth
-                <a class="btn btn-outline-light" href="{{route('article.create')}}">Crea il tuo articolo</a>
+                <a class="btn btn-outline-light" href="{{route('article.create')}}">{{__('ui.Crea il tuo articolo')}}</a>
                 @endauth
             </div>
         </div>
@@ -33,9 +33,9 @@
             @empty
 
                 <div class="col-12">
-                    <h3 class="display-6 fw-normal text-center">Non ci sono articoli</h3>
+                    <h3 class="display-6 fw-normal text-center">{{__('ui.Non ci sono articoli')}}</h3>
                     @auth
-                    <a class="btn btn-primary" href="{{route('article.create')}}">Crea Articolo</a>
+                    <a class="btn btn-primary" href="{{route('article.create')}}">{{__('ui.Crea articolo')}}</a>
                     @endauth
                 </div>
                 

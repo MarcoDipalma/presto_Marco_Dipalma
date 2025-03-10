@@ -1,13 +1,11 @@
 <x-layout>
 
     <div class="container-fluid pt-5">
-        <div class="row">
+        <div class="row d-flex justify-content-center">
             <div class="col-3">
-                <div class="rounded shadow bg-body-secondary">
-                    <h1 class="display-5 text-center pb-2">
-                        Revisor dashboard
-                    </h1>
-                </div>
+                <h1 class="fw-normal text-center pb-2">
+                    Revisor Dashboard
+                </h1>
             </div>
         </div>
 
@@ -36,11 +34,11 @@
 
                 <div class="col-md-4 ps-4 d-flex flex-column justify-content-between">
                     <div>
-                        <h1>{{$article_to_check->title}}</h1>
-                        <h3>{{$article_to_check->name}}</h3>
-                        <h4>{{$article_to_check->price}}€</h4>
-                        <h4 class="fst-italic text-muted">#{{$article_to_check->category->name}}</h4>
-                        <p class="h6">{{$article_to_check->description}}</p>
+                        <h1>Titolo: {{$article_to_check->title}}</h1>
+                        <h3>Autore: {{$article_to_check->user->name}}</h3>
+                        <h4>Prezzo: {{$article_to_check->price}}€</h4>
+                        <h4 class="fst-italic">Categoria: #{{$article_to_check->category->name}}</h4>
+                        <p>Descriozione:{{$article_to_check->description}}</p>
                     </div>
                     <div class="d-flex pb-4 justify-content-around">
                         <form action="{{route('reject', ['article'=>$article_to_check])}}" method="POST">

@@ -1,0 +1,26 @@
+<?php
+
+    return [
+        'Articoli' => 'Articles',
+        'Categorie' => 'Categories',
+        'Crea' => 'Create',
+        'Revisore' => 'Reviewer',
+        'Cerca' => 'Search',
+        'Crea il tuo articolo' => 'Create your article',
+        'Non ci sono articoli' => 'There are no articles',
+        'Vuoi diventare revisore? Invia una richiesta al nostro admin' => 'Want to become a reviewer? Send a request to our admin',
+        'Crea articolo' => 'Create article',
+        'Accedi' => 'Sign in',
+        'Registrati' => 'Sign up',
+        'Disconnettiti' => 'Sign out',
+        'Abbigliamento' => 'Clothing',
+        'Accessori' => 'Accessories',
+        'Animali domestici' => 'Pets',
+        'Casa e giardinaggio' => 'Home & Garden',
+        'Elettronica' => 'Electonics',
+        'Giochi' => 'Games',
+        'Libri e riviste' => 'Books & Magazine',
+        'Motori' => 'Motoring',
+        'Salute e bellezza' => 'Health & Beauty',
+        'Sport' => 'Sports',
+    ];
