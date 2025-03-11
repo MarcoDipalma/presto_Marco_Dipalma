@@ -9,6 +9,7 @@
         'Crea il tuo articolo' => 'Crea il tuo articolo',
         'Non ci sono articoli' => 'Non ci sono articoli',
         'Vuoi diventare revisore? Invia una richiesta al nostro admin' => 'Vuoi diventare revisore? Invia una richiesta al nostro admin',
+        'Diventa revisore' => 'Diventa un revisore',
         'Non ci sono articoli' => 'Non ci sono articoli',
         'Crea articolo' => 'Crea articolo',
         'Accedi' => 'Accedi',

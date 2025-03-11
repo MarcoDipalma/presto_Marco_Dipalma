@@ -6,8 +6,8 @@
       <!-- Section: CTA -->
       <section class="">
         <p class="d-flex justify-content-center align-items-center">
-          <span class="me-3 text-black">Vuoi diventare revisore? Invia una richiesta al nostro admin</span>
-          <a href="{{route('become.revisor')}}" class="btn btn-success">diventa revisore</a>
+          <span class="me-3 text-black">{{__('ui.Vuoi diventare revisore? Invia una richiesta al nostro admin')}}</span>
+          <a href="{{route('become.revisor')}}" class="btn btn-success">{{__('ui.Diventa revisore')}}</a>
         </p>
       </section>
       <!-- Section: CTA -->

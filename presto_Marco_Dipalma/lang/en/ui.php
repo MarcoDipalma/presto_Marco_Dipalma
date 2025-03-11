@@ -9,6 +9,7 @@
         'Crea il tuo articolo' => 'Create your article',
         'Non ci sono articoli' => 'There are no articles',
         'Vuoi diventare revisore? Invia una richiesta al nostro admin' => 'Want to become a reviewer? Send a request to our admin',
+        'Diventa revisore' => 'Become a reviewer',
         'Crea articolo' => 'Create article',
         'Accedi' => 'Sign in',
         'Registrati' => 'Sign up',
