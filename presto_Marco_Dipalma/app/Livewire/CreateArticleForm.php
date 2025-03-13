@@ -2,12 +2,14 @@
 
 namespace App\Livewire;
 
-use App\Models\Article;
 use App\Livewire\File;
+use App\Models\Article;
 use Livewire\Component;
 use App\Jobs\ResizeImage;
 use Livewire\WithFileUploads;
 use Livewire\Attributes\Validate;
+use App\Jobs\GoogleVisionLabelImage;
+use App\Jobs\GoogleVisionSafeSearch;
 use Illuminate\Support\Facades\Auth;
 
 class CreateArticleForm extends Component
@@ -52,6 +54,10 @@ class CreateArticleForm extends Component
                 $newFileName = "articles/{$this->article->id}";
                 $newImage = $this->article->images()->create(['path' => $image->store($newFileName, 'public')]);
                 dispatch(new ResizeImage($newImage->path, 300, 300));
+                dispatch(new GoogleVisionSafeSearch($newImage->id));
+                dispatch(new GoogleVisionLabelImage($newImage->id));
+
+
             }
 
             //  Mi comunica che non trova la classe "App\Livewire\File"

@@ -23,3 +23,5 @@ yarn-error.log
 /.zed
 
 /storage/*.index
+
+google_credential.json

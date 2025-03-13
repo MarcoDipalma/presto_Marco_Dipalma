@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Models\Article;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -32,6 +33,13 @@ class Image extends Model
 
     public function article() : BelongsTo{
         return $this->belongsTo(Article::class);
+    }
+
+
+    protected function casts(): array{
+        return[
+            'labels' => 'array',
+        ];
     }
 
 }
