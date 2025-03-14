@@ -5,6 +5,7 @@ namespace App\Livewire;
 use App\Livewire\File;
 use App\Models\Article;
 use Livewire\Component;
+use App\Jobs\RemoveFaces;
 use App\Jobs\ResizeImage;
 use Livewire\WithFileUploads;
 use Livewire\Attributes\Validate;
@@ -53,11 +54,15 @@ class CreateArticleForm extends Component
             foreach($this->images as $image){
                 $newFileName = "articles/{$this->article->id}";
                 $newImage = $this->article->images()->create(['path' => $image->store($newFileName, 'public')]);
-                dispatch(new ResizeImage($newImage->path, 300, 300));
-                dispatch(new GoogleVisionSafeSearch($newImage->id));
-                dispatch(new GoogleVisionLabelImage($newImage->id));
+                // dispatch(new ResizeImage($newImage->path, 300, 300));
+                // dispatch(new GoogleVisionSafeSearch($newImage->id));
+                // dispatch(new GoogleVisionLabelImage($newImage->id));
 
-
+                RemoveFaces::withChain([
+                    new ResizeImage($newImage->path, 300, 300),
+                    new GoogleVisionSafeSearch($newImage->id),
+                    new GoogleVisionLabelImage($newImage->id)
+                ])->dispatch($newImage->id);
             }
 
             //  Mi comunica che non trova la classe "App\Livewire\File"
