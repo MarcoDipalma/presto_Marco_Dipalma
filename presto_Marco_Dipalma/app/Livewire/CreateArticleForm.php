@@ -2,7 +2,7 @@
 
 namespace App\Livewire;
 
-use App\Livewire\File;
+use Illuminate\Support\Facades\File;
 use App\Models\Article;
 use Livewire\Component;
 use App\Jobs\RemoveFaces;
