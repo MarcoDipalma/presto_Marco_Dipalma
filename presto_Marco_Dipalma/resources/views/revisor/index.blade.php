@@ -34,6 +34,7 @@
                                                 <p class="fst-italic">No labels</p>
                                                 
                                             @endif
+                                        </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="card-body">

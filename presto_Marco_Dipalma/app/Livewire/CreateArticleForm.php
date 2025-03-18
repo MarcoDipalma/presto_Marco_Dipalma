@@ -65,7 +65,6 @@ class CreateArticleForm extends Component
                 ])->dispatch($newImage->id);
             }
 
-            //  Mi comunica : Class "App\Livewire\File" not found
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
 

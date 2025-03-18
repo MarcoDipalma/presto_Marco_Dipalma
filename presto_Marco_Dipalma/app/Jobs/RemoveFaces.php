@@ -49,22 +49,22 @@ class RemoveFaces implements ShouldQueue
         foreach ($faces as $face) {
             $vertices = $face->getBoundingPoly()->getVertices();
 
-            $boundes = [];
+            $bounds = [];
 
             foreach ($vertices as $vertex) {
-                $boundes[] = [$vertex->getX(), $vertex->getY()];
+                $bounds[] = [$vertex->getX(), $vertex->getY()];
             }
 
-            $w = $boundes[2][0] - $boundes[0][0];
-            $h = $boundes[2][1] - $boundes[0][1];
+            $w = $bounds[2][0] - $bounds[0][0];
+            $h = $bounds[2][1] - $bounds[0][1];
 
             $image = SpatieImage::load($srcPath);
 
             $image->watermark(
                 base_path('resources/img/sfocatura.jpg'),
                 AlignPosition::TopLeft,
-                paddingX: $boundes[0][0],
-                paddingY: $boundes[0][1],
+                paddingX: $bounds[0][0],
+                paddingY: $bounds[0][1],
                 width: $w,
                 height: $h,
                 fit: Fit::Stretch
