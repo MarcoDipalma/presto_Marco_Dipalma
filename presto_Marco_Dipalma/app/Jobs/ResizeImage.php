@@ -6,6 +6,9 @@ use Spatie\Image\Image;
 use Spatie\Image\Enums\Unit;
 use Illuminate\Foundation\Queue\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Foundation\Bus\Dispatchable;
 
 class ResizeImage implements ShouldQueue
 {

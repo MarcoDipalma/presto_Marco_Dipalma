@@ -18,19 +18,19 @@ class CreateArticleForm extends Component
 
     use WithFileUploads;
 
-    #[Validate('required', message:'il campo obbligatorio')]
-    #[Validate('min:3', message:'il campo obbligatorio')]
+    #[Validate('required', message:'Il campo è obbligatorio')]
+    #[Validate('min:3', message:'Il campo richiede minimo 3 caratteri')]
     public $title;
 
-    #[Validate('required', message:'il campo obbligatorio')]
-    #[Validate('min:10', message:'il campo obbligatorio')]
+    #[Validate('required', message:'Il campo è obbligatorio')]
+    #[Validate('min:10', message:'Il campo richiede minimo 10 caratteri')]
     public $description;
     
-    #[Validate('required', message:'il campo obbligatorio')]
-    #[Validate('numeric', message:'il campo obbligatorio')]
+    #[Validate('required', message:'Il campo è obbligatorio')]
+    #[Validate('numeric', message:'Il campo richiede un numero')]
     public $price;
 
-    #[Validate('required', message:'il campo obbligatorio')]
+    #[Validate('required', message:'Il campo è obbligatorio')]
     public $category;
     public $article;
 
@@ -65,7 +65,7 @@ class CreateArticleForm extends Component
                 ])->dispatch($newImage->id);
             }
 
-            //  Mi comunica che non trova la classe "App\Livewire\File"
+            //  Mi comunica : Class "App\Livewire\File" not found
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
 

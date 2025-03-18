@@ -5,10 +5,10 @@
       <h6 class="card-subtitle text-body-secondary">{{$article->price}}</h6>
       <div class="d-flex justify-content-evenly align-items-center mt-5">
 
-          <a href="{{route('article.show', compact('article'))}}" class="btn btn-primary">Dettaglio</a>
+          <a href="{{route('article.show', compact('article'))}}" class="btn btn-outline-primary btn-sm">Dettaglio</a>
 
           @if ($article->category)
-          <a href="{{route('article.byCategory', ['category'=>$article->category])}}" class="btn btn-outline-info">{{$article->category->name}}</a>
+          <a href="{{route('article.byCategory', ['category'=>$article->category])}}" class="btn btn-outline-success btn-sm">{{$article->category->name}}</a>
           @endif
 
 

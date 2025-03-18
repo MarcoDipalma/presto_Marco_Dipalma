@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand bg-body-tertiary">
-    <div class="container-fluid">
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top bg-white">
+    <div id="collapse" class="container-fluid bg-white">
       <a class="navbar-brand" href="{{route('home')}}">Presto.it</a>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">

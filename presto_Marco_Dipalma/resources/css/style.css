@@ -2,6 +2,18 @@ h1, h2, h3, h4, h5, p, label{
     color: white;
 }
 
+.navbar{
+    height: 80px;
+    transition: 0.5s;
+}
+.nav-link:hover{
+    font-weight: 500;
+}
+
+.margin-custom{
+    margin-top: 30px;
+}
+
 body{
     background-color: rgb(56, 56, 56);
     background-image: url(../backgorundimg_repeat.jpg);
