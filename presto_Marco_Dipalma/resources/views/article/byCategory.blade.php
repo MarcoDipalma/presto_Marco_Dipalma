@@ -3,7 +3,7 @@
     <div class="container pt-5">
         <div class="row justify-content-center">
             <div class="col-12 text-center text-white">
-                <h1 class="fw-normal">Articoli per categoria <span class="fst-italic">{{$category->name}}</span></h1>
+                <h1 class="fw-normal">{{__('ui.Articoli per categoria')}} <span class="fst-italic">{{$category->name}}</span></h1>
             </div>
         </div>
 
@@ -17,9 +17,9 @@
             @empty
 
                 <div class="col-12 text-center">
-                    <h3 class="display-6 fw-normal text-center">Non ci sono articoli</h3>
+                    <h3 class="display-6 fw-normal text-center">{{__('ui.Non ci sono articoli')}}</h3>
                     @auth
-                    <a class="btn btn-primary" href="{{route('article.create')}}">Crea Articolo</a>
+                    <a class="btn btn-primary" href="{{route('article.create')}}">{{__('ui.Crea articolo')}}</a>
                     @endauth
                 </div>
                 

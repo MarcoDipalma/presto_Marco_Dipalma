@@ -1,6 +1,7 @@
 <?php
 
     return [
+        // homepage + navbar + footer
         'Articoli' => 'Articles',
         'Categorie' => 'Categories',
         'Crea' => 'Create',
@@ -24,4 +25,38 @@
         'Motori' => 'Motoring',
         'Salute e bellezza' => 'Health & Beauty',
         'Sport' => 'Sports',
+
+        // index Articoli
+        'Tutti gli articoli' => 'All articles',
+
+        // searched
+        'Risultati della ricerca' => 'Search results',
+        'Nessun articolo corrisponde alla tua ricerca' => 'No articles match your search',
+
+        // byCategory
+        'Articoli per categoria' => 'Articles by category',
+
+        // create
+        'Scrivi un articolo' => 'Write an article',
+
+        // show
+        "Dettaglio dell'articolo:" => "Article details:",
+        'Precedente' => 'Previous',
+        'Successivo' => 'Next',
+
+        // register
+        'Accedi' => 'Log in',
+        'Registrati' => 'Sign up',
+        'Nome' => 'Name',
+        'Email' => 'Email',
+        'Password' => 'Password',
+        'Conferma password' => 'Confirm password',
+
+        // create-article-form
+        'Titolo:' => 'Title:',
+        'Descrizione:' => 'Description:',
+        'Prezzo:' => 'Price:',
+        'Anteprima foto:' => 'Photo preview:',
+        'Seleziona una categoria' => 'Select a category',
+        'Salva' => 'Save',
     ];

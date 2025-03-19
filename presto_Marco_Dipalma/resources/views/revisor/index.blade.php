@@ -97,11 +97,11 @@
             
                 <div class="col-md-4 ps-4 d-flex flex-column justify-content-between">
                     <div>
-                        <h1>Titolo: {{$article_to_check->title}}</h1>
-                        <h3>Autore: {{$article_to_check->user->name}}</h3>
-                        <h4>Prezzo: {{$article_to_check->price}}€</h4>
-                        <h4 class="fst-italic">Categoria: #{{$article_to_check->category->name}}</h4>
-                        <p>Descrizione: {{$article_to_check->description}}</p>
+                        <h1 class="fs-4">Titolo: <span class=" fs-2 fst-italic">{{$article_to_check->title}}</span></h1>
+                        <h3 class="fs-4">Autore: <span class="fs-2 fst-italic">{{$article_to_check->user->name}}</span></h3>
+                        <h4 class="fs-4">Prezzo: <span class="fs-2 fst-italic">{{$article_to_check->price}}€</span></h4>
+                        <h4 class="fs-4">Categoria: <span class="fs-2 fst-italic">#{{$article_to_check->category->name}}</span></h4>
+                        <p class="fs-6">Descrizione: <span class="fs-5 fst-italic">{{$article_to_check->description}}</span></p>
                     </div>
                     <div class="d-flex pb-4 justify-content-around">
                         <form action="{{route('reject', ['article'=>$article_to_check])}}" method="POST">

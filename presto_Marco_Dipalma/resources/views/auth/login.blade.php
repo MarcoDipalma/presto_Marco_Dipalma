@@ -4,7 +4,7 @@
 
         <div class="row justify-content-center">
             <div class="col-12 text-center">
-                <h1 class="display-3 pt-5 text-white">Accedi</h1>
+                <h1 class="display-3 pt-5 text-white">{{__('ui.Accedi')}}</h1>
             </div>
         </div>
 
@@ -15,17 +15,17 @@
                     @csrf
 
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
+                        <label for="email" class="form-label">{{__('ui.Email')}}</label>
                         <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
                       </div>
 
                       <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
+                        <label for="password" class="form-label">{{__('ui.Password')}}</label>
                         <input type="password" name="password" class="form-control" id="password">
                       </div>
 
                       <div class="d-flex justify-content-end">
-                        <button type="submit" class="btn btn-primary">Accedi</button>
+                        <button type="submit" class="btn btn-primary">{{__('ui.Accedi')}}</button>
                     </div>
                 </form>
 
