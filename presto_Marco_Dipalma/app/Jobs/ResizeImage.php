@@ -12,7 +12,9 @@ use Illuminate\Foundation\Bus\Dispatchable;
 
 class ResizeImage implements ShouldQueue
 {
-    use Queueable;
+    // use Queueable;
+    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+
 
     private $w, $h, $fileName, $path;
 
