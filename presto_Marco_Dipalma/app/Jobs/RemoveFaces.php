@@ -8,7 +8,6 @@ use Spatie\Image\Enums\AlignPosition;
 use Spatie\Image\Image as SpatieImage;
 use Illuminate\Foundation\Queue\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
-// use Google\Cloud\Vision\V1\Client\ImageAnnotatorClient;
 use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
@@ -16,7 +15,7 @@ use Illuminate\Foundation\Bus\Dispatchable;
 
 class RemoveFaces implements ShouldQueue
 {
-    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+    use Queueable;
 
     private $article_image_id;
 
