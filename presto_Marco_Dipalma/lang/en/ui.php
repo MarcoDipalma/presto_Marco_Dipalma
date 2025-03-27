@@ -59,4 +59,13 @@
         'Anteprima foto:' => 'Photo preview:',
         'Seleziona una categoria' => 'Select a category',
         'Salva' => 'Save',
+
+        // Revisore
+        'Dashboard Revisore' => 'Reviewer Dashboard',
+        'Autore:' => 'Author:',
+        'Categoria:' => 'Category:',
+        'Rifiuta' => 'Reject',
+        'Accetta' => 'Accept',
+        'Nessun articolo da revisionare' => 'No articles to review',
+        "Torna all'homepage" => "Return to homepage",
     ];

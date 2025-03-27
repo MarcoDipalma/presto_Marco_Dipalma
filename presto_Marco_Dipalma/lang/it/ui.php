@@ -60,4 +60,13 @@
         'Anteprima foto:' => 'Anteprima foto:',
         'Seleziona una categoria' => 'Seleziona una categoria',
         'Salva' => 'Salva',
+
+        // Revisore
+        'Dashboard Revisore' => 'Dashboard Revisore',
+        'Autore:' => 'Autore',
+        'Categoria:' => 'Categoria',
+        'Rifiuta' => 'Rifiuta',
+        'Accetta' => 'Accetta',
+        'Nessun articolo da revisionare' => 'Nessun articolo da revisionare',
+        "Torna all'homepage" => "Torna all'homepage",
     ];

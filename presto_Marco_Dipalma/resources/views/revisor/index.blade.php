@@ -4,7 +4,7 @@
         <div class="row d-flex justify-content-center">
             <div class="col-3">
                 <h1 class="fw-normal text-center pb-2">
-                    Revisor Dashboard
+                    {{__('ui.Dashboard Revisore')}}
                 </h1>
             </div>
         </div>
@@ -97,22 +97,22 @@
             
                 <div class="col-md-4 ps-4 d-flex flex-column justify-content-between">
                     <div>
-                        <h1 class="fs-4">Titolo: <span class=" fs-2 fst-italic">{{$article_to_check->title}}</span></h1>
-                        <h3 class="fs-4">Autore: <span class="fs-2 fst-italic">{{$article_to_check->user->name}}</span></h3>
-                        <h4 class="fs-4">Prezzo: <span class="fs-2 fst-italic">{{$article_to_check->price}}€</span></h4>
-                        <h4 class="fs-4">Categoria: <span class="fs-2 fst-italic">#{{$article_to_check->category->name}}</span></h4>
-                        <p class="fs-6">Descrizione: <span class="fs-5 fst-italic">{{$article_to_check->description}}</span></p>
+                        <h1 class="fs-4">{{__('ui.Titolo:')}} <span class=" fs-2 fst-italic">{{$article_to_check->title}}</span></h1>
+                        <h3 class="fs-4">{{__('ui.Autore:')}} <span class="fs-2 fst-italic">{{$article_to_check->user->name}}</span></h3>
+                        <h4 class="fs-4">{{__('ui.Prezzo:')}} <span class="fs-2 fst-italic">{{$article_to_check->price}}€</span></h4>
+                        <h4 class="fs-4">{{__('ui.Categoria:')}} <span class="fs-2 fst-italic">#{{$article_to_check->category->name}}</span></h4>
+                        <p class="fs-6">{{__('ui.Descrizione:')}} <span class="fs-5 fst-italic">{{$article_to_check->description}}</span></p>
                     </div>
                     <div class="d-flex pb-4 justify-content-around">
                         <form action="{{route('reject', ['article'=>$article_to_check])}}" method="POST">
                             @csrf
                             @method('PATCH')
-                            <button class="btn btn-danger py-2 px-5 fw-bold">Rifiuta</button>
+                            <button class="btn btn-danger py-2 px-5 fw-bold">{{__('ui.Rifiuta')}}</button>
                         </form>
                         <form action="{{route('accept', ['article'=>$article_to_check])}}" method="POST">
                             @csrf
                             @method('PATCH')
-                            <button class="btn btn-success py-2 px-5 fw-bold">Accetta</button>
+                            <button class="btn btn-success py-2 px-5 fw-bold">{{__('ui.Accetta')}}</button>
                         </form>
                     </div>
                 
@@ -123,9 +123,9 @@
                 <div class="row justify-content-center align-items-center text-center">
                     <div class="col-12">
                         <h1 class="fst-italic display-4">
-                            Nessun articolo da revisionare
+                            {{__('ui.Nessun articolo da revisionare')}}
                         </h1>
-                        <a href="{{route('home')}}" class="mt-5 btn btn-success">Torna all'homepage</a>
+                        <a href="{{route('home')}}" class="mt-5 btn btn-success">{{__("ui.Torna all'homepage")}}</a>
                     </div>
                 </div>
 

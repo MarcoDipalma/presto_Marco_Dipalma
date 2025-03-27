@@ -9,14 +9,14 @@
 
         <div class="row py-5 justify-content-center align-items-center">
 
-            <div class="col-12 col-md-6 mb-3">
+            <div class="col-12 col-md-6 mb-3 img-container">
 
               @if ($article->images->count() > 0)
                 <div id="carouselExample" class="carousel slide">
                   <div class="carousel-inner">
                     @foreach ($article->images as $key=>$image)
                       <div class="carousel-item @if($loop->first) active @endif ">
-                        <img src="{{$image->getUrl(300,300)}}" alt="Immagine {{$key + 1}} dell'articolo {{$article->title}}" class="d-block w-100 rounded shadow">  
+                        <img src="{{$image->getUrl()}}" alt="Immagine {{$key + 1}} dell'articolo {{$article->title}}" class="d-block rounded shadow img-custom">  
                       </div>                        
                     @endforeach
 

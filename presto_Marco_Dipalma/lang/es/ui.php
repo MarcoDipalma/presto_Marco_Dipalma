@@ -59,4 +59,13 @@
         'Anteprima foto:' => 'Vista previa de la foto:',
         'Seleziona una categoria' => 'Selecciona una categoría',
         'Salva' => 'Guardar',
+
+        // Revisore
+        'Dashboard Revisore' => 'Panel de Revisor',
+        'Autore:' => 'Autor:',
+        'Categoria:' => 'Categoría:',
+        'Rifiuta' => 'Rechazar',
+        'Accetta' => 'Aceptar',
+        'Nessun articolo da revisionare' => 'No hay artículos para revisar',
+        "Torna all'homepage" => "Volver a la página de inicio",
     ];

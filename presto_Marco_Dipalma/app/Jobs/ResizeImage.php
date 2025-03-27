@@ -44,8 +44,8 @@ class ResizeImage implements ShouldQueue
             ->crop($w, $h, CropPosition::Center)
             ->watermark(
                 base_path('resources/img/LogoPresto2.png'),
-                width: 50,
-                height: 50,
+                width: 300,
+                height: 300,
                 paddingX: 5,
                 paddingY: 5,
                 paddingUnit: Unit::Percent

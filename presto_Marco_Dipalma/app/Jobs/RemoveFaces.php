@@ -61,7 +61,7 @@ class RemoveFaces implements ShouldQueue
             $image = SpatieImage::load($srcPath);
 
             $image->watermark(
-                base_path('resources/img/smile.png'),
+                base_path('resources/img/censuraVolto.avif'),
                 AlignPosition::TopLeft,
                 paddingX: $bounds[0][0],
                 paddingY: $bounds[0][1],
