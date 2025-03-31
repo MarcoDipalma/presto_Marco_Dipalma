@@ -25,6 +25,10 @@
         'Motori' => 'Motores',
         'Salute e bellezza' => 'Salud y belleza',
         'Sport' => 'Deporte',
+        "Un po' di numeri" => "Resumen",
+        'Prodotti venduti' => 'Productos vendidos',
+        'Clienti soddisfatti' => 'Clientes satisfechos',
+        'Visite giornaliere' => 'Visitas diarias',
 
         // index Articoli
         'Tutti gli articoli' => 'Todos los artículos',

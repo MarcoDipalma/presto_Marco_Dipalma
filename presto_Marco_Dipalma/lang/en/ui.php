@@ -25,6 +25,10 @@
         'Motori' => 'Motoring',
         'Salute e bellezza' => 'Health & Beauty',
         'Sport' => 'Sports',
+        "Un po' di numeri" => "Overview",
+        'Prodotti venduti' => 'Sold products',
+        'Clienti soddisfatti' => 'Satisfied customers',
+        'Visite giornaliere' => 'Daily visits',
 
         // index Articoli
         'Tutti gli articoli' => 'All articles',

@@ -26,6 +26,10 @@
         'Motori' => 'Motori',
         'Salute e bellezza' => 'Salute e bellezza',
         'Sport' => 'Sport',
+        "Un po' di numeri" => "Un po' di numeri",
+        'Prodotti venduti' => 'Prodotti venduti',
+        'Clienti soddisfatti' => 'Clienti soddisfatti',
+        'Visite giornaliere' => 'Visite giornaliere',
         
         // index Articoli
         'Tutti gli articoli' => 'Tutti gli articoli',

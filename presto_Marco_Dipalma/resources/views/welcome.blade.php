@@ -30,11 +30,11 @@
                     <img src="{{asset("storage/images/GraficoHomepage.png")}}" alt="immagine casuale grafici" style="width: 100%">
                 </div>
                 <div class="col-12 col-md-6">
-                    <h3 class="display-4 text-center fw-normal">Un po' di numeri</h3>
+                    <h3 class="display-4 text-center fw-normal">{{__("ui.Un po' di numeri")}}</h3>
 
-                    <h2 class="display-6"> <span class="number" id="primoNumero">0</span> Prodotti venduti</h2>
-                    <h2 class="display-6"> <span class="number"  id="secondoNumero">0</span> Clienti soddisfatti</h2>
-                    <h2 class="display-6"> <span class="number"  id="terzoNumero">0</span> Visite giornaliere</h2>
+                    <h2 class="display-6"> <span class="number" id="primoNumero">0</span> {{__('ui.Prodotti venduti')}}</h2>
+                    <h2 class="display-6"> <span class="number"  id="secondoNumero">0</span> {{__('ui.Clienti soddisfatti')}}</h2>
+                    <h2 class="display-6"> <span class="number"  id="terzoNumero">0</span> {{__('ui.Visite giornaliere')}}</h2>
                 </div>
             </div>
         </section>
