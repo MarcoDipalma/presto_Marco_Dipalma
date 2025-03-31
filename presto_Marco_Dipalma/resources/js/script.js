@@ -32,3 +32,48 @@ window.addEventListener('scroll', ()=>{
         
     }
 });
+
+
+// Numeri Incrementali
+
+let primoNumero = document.querySelector('#primoNumero');
+let secondoNumero = document.querySelector('#secondoNumero');
+let terzoNumero = document.querySelector('#terzoNumero');
+
+let confirm = true;
+
+
+function createInterval(n, element, time){
+    let counter = 0;
+
+    let interval = setInterval(()=>{
+        if(counter<n){
+            counter++
+            element.innerHTML = counter;
+        }else{
+            clearInterval(interval)
+        }
+
+    },time);
+
+    setTimeout(() => {
+        confirm = true;
+    }, 9000);
+
+};
+
+
+
+let observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if (entry.isIntersecting && confirm) {
+            createInterval(100, primoNumero, 75);
+            createInterval(200, secondoNumero, 40);
+            createInterval(300, terzoNumero, 28);
+            confirm = false
+        }
+    })
+
+});
+
+observer.observe(primoNumero);
