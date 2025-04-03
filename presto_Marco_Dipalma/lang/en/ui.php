@@ -41,7 +41,7 @@
         'Articoli per categoria' => 'Articles by category',
 
         // create
-        'Scrivi un articolo' => 'Write an article',
+        'Pubblica un articolo' => 'Submit an article',
 
         // show
         "Dettaglio dell'articolo:" => "Article details:",
@@ -72,4 +72,9 @@
         'Accetta' => 'Accept',
         'Nessun articolo da revisionare' => 'No articles to review',
         "Torna all'homepage" => "Return to homepage",
+
+        // About Us
+        'Chi siamo' => 'About Us',
+        'I creatori' => 'The Creators',
+        'Gli sviluppatori' => 'The Developers',
     ];

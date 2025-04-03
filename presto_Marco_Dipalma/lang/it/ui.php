@@ -42,7 +42,7 @@
         'Articoli per categoria' => 'Articoli per categoria',
 
         // create
-        'Scrivi un articolo' => 'Scrivi un articolo',
+        'Pubblica un articolo' => 'Pubblica un articolo',
 
         // show
         "Dettaglio dell'articolo:" => "Dettaglio dell'articolo:",
@@ -73,4 +73,9 @@
         'Accetta' => 'Accetta',
         'Nessun articolo da revisionare' => 'Nessun articolo da revisionare',
         "Torna all'homepage" => "Torna all'homepage",
+
+        // About Us
+        'Chi siamo' => 'Chi siamo',
+        'I creatori' => 'I Creatori',
+        'Gli sviluppatori' => 'Gli Sviluppatori',
     ];

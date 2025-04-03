@@ -41,7 +41,7 @@
         'Articoli per categoria' => 'Artículos por categoría',
 
         // create
-        'Scrivi un articolo' => 'Escribe un artículo',
+        'Pubblica un articolo' => 'Enviar un artículo',
 
         // show
         "Dettaglio dell'articolo:" => "Detalle del artículo:",
@@ -72,4 +72,9 @@
         'Accetta' => 'Aceptar',
         'Nessun articolo da revisionare' => 'No hay artículos para revisar',
         "Torna all'homepage" => "Volver a la página de inicio",
+
+        // About Us
+        'Chi siamo' => 'Sobre Nosotros',
+        'I creatori' => 'Los Creadores',
+        'Gli sviluppatori' => 'Los Desarrolladores',
     ];

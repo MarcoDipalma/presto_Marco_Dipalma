@@ -3,7 +3,7 @@
     <div class="container pt-5">
         <div class="row justify-content-center">
             <div class="col-12 text-center text-white">
-                <h1>{{__('ui.Scrivi un articolo')}}</h1>
+                <h1>{{__('ui.Pubblica un articolo')}}</h1>
             </div>
         </div>
 

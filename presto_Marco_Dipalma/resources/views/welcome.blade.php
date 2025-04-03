@@ -13,12 +13,12 @@
     @endif
 
     <div class="container-fluid text-center">        
-        <div class="row hustify-content-center align-items-center vh-100">
+        <div class="row justify-content-center align-items-center vh-100">
             <div class="col-12">
                 <h1 class="display-1 text-white">Presto.it</h1>
-                @auth
+                {{-- @auth --}}
                 <a class="btn btn-outline-light" href="{{route('article.create')}}">{{__('ui.Crea il tuo articolo')}}</a>
-                @endauth
+                {{-- @endauth --}}
             </div>
         </div>
 
@@ -32,9 +32,9 @@
                 <div class="col-12 col-md-6">
                     <h3 class="display-4 text-center fw-normal">{{__("ui.Un po' di numeri")}}</h3>
 
-                    <h2 class="display-6"> <span class="number" id="primoNumero">0</span> {{__('ui.Prodotti venduti')}}</h2>
-                    <h2 class="display-6"> <span class="number"  id="secondoNumero">0</span> {{__('ui.Clienti soddisfatti')}}</h2>
-                    <h2 class="display-6"> <span class="number"  id="terzoNumero">0</span> {{__('ui.Visite giornaliere')}}</h2>
+                    <h2 class="display-6"> <span class="number fw-semibold" id="primoNumero">0</span> {{__('ui.Prodotti venduti')}}</h2>
+                    <h2 class="display-6"> <span class="number fw-semibold"  id="secondoNumero">0</span> {{__('ui.Clienti soddisfatti')}}</h2>
+                    <h2 class="display-6"> <span class="number fw-semibold"  id="terzoNumero">0</span> {{__('ui.Visite giornaliere')}}</h2>
                 </div>
             </div>
         </section>
@@ -53,9 +53,9 @@
 
                 <div class="col-12">
                     <h3 class="display-6 fw-normal text-center">{{__('ui.Non ci sono articoli')}}</h3>
-                    @auth
+                    {{-- @auth --}}
                     <a class="btn btn-primary" href="{{route('article.create')}}">{{__('ui.Crea articolo')}}</a>
-                    @endauth
+                    {{-- @endauth --}}
                 </div>
                 
             @endforelse

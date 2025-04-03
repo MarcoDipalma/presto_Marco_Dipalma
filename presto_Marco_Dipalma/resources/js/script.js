@@ -67,9 +67,9 @@ function createInterval(n, element, time){
 let observer = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
         if (entry.isIntersecting && confirm) {
-            createInterval(100, primoNumero, 75);
-            createInterval(200, secondoNumero, 40);
-            createInterval(300, terzoNumero, 28);
+            createInterval(100, primoNumero, 30);
+            createInterval(200, secondoNumero, 20);
+            createInterval(300, terzoNumero, 15);
             confirm = false
         }
     })
